@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+.container{
+padding: 10px;
+}
+
+.weatherBar{
+display: flex;
+justify-content: center;
+padding: 5px;
+}
+
+.weatherCard{
+font-family: 'Ubuntu', sans-serif;
+margin: 5px;
+width: calc(100%/7);
+height: 180%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid rgb(255 255 255 / 30%);
+border-radius: 16px;
+background-color: rgb(255 255 255 / 20%);
+box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+
+-webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+-webkit-mask-size: 800%;
+-webkit-mask-position: 0;
+}
+.weatherCard:hover {
+transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+-webkit-mask-position: 120%;
+mask-position: 120%;
+opacity: 1;
+}
+
+.weathers{
+	width:250px;
+	height: 100px;
+	background: rgb(255 255 255 / 30%);
+    border-radius: 8%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.weathers p{
+	margin: 5px 0;
+	font-weight: 600;
+}
+
+.tempatures{
+    width: 100%;
+	display: flex;
+    justify-content: space-around;
+}
+.tempature{
+	margin:25px;
+	width: 90px;
+	height: 35px;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.cities {
+margin: 20px;
+text-align: center;
+font-size: 32px;
+font-weight: bold;
+color: #333;
+padding: 8px 15px;
+border: 2px solid #ccc;
+border-radius: 5px;
+background-color: rgb(255 255 255 / 50%);
+appearance: none;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+overflow-y: hidden
+
+}
+
+.cities:focus {
+outline: none;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+border-color: #007bff;
+}
+
+.cities option {
+font-size: 32px;
+font-weight: bold;
+color: #e7e7e7;
+background-color: #6a6a6a;
+overflow-y: hidden
+}
+option:hover {
+background-color: #f50808;
+}
+
+.cities:hover{
+color: #000;
+background-color: rgb(255 255 255 / 80%);
+}
+
+
+.card{
+display: flex;
+}
+
+.sunny{
+background:url("/public/assets/sunny.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.partly-cloudy{
+background:url("/public/assets/partly-cloudy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.closed{
+background:url("/public/assets/closed.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.foggy{
+background:url("/public/assets/foggy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.light-rain{
+background:url("/public/assets/light-rain.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.freezer-drizzle{
+background:url("/public/assets/freezer-drizzle.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.rainy{
+background:url("/public/assets/rainy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.light-snow{
+background:url("/public/assets/light-snow.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.snowy{
+background:url("/public/assets/snowy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.stormy{
+background:url("/public/assets/stormy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.storm-w-hail{
+background:url("/public/assets/storm-w-hail.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+
+.footer {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer a {
+
+color: #fff;
+text-decoration: none;
+padding-right:20px ;
+}
+
+.footer p {
+color: #e7e7e7;
+padding-right: 5px;
+}
+.links{
+margin-left: 220px;
+}
+
+
