@@ -1,0 +1,88 @@
+.sunny{
+background:url("/public/assets/sunny.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.partly-cloudy{
+background:url("/public/assets/partly-cloudy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.closed{
+background:url("/public/assets/closed.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.foggy{
+background:url("/public/assets/foggy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.light-rain{
+background:url("/public/assets/light-rain.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.freezer-drizzle{
+background:url("/public/assets/freezer-drizzle.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.rainy{
+background:url("/public/assets/rainy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.light-snow{
+background:url("/public/assets/light-snow.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.snowy{
+background:url("/public/assets/snowy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.stormy{
+background:url("/public/assets/stormy.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}
+.storm-w-hail{
+background:url("/public/assets/storm-w-hail.png");
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;
+width: 65%;
+height: 50%;
+}

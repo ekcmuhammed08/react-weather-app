@@ -1,4 +1,5 @@
 import './index.css'
+import './cardImages.css'
 import { useWeather } from '../Context/WeatherContext'
 
 function WeatherCard() {

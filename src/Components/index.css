@@ -1,226 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 
-
-
-
-
-.weatherBar{
-display: flex;
-justify-content: center;
-padding: 0px;
-}
-
-.card{
-display: flex;
-justify-content: center;
-}
-
-.weatherCard{
-font-family: 'Ubuntu', sans-serif;
-margin: 5px;
-width: calc(100%/8);
-height: 180%;
-display: flex;
-flex-direction: column;
-align-items: center;
-border: 1px solid rgb(255 255 255 / 30%);
-border-radius: 16px;
+.header{
+border:2px solid rgb(255 255 255 / 20%);
 background-color: rgb(255 255 255 / 20%);
-box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-
--webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
--webkit-mask-size: 800%;
--webkit-mask-position: 0;
+margin-bottom: 20px;
 }
-.weatherCard:hover {
-transition: mask-position 2s ease,-webkit-mask-position 2s ease;
--webkit-mask-position: 120%;
-mask-position: 120%;
-opacity: 1;
-}
-
-@media only screen and (max-width: 600px){
-	.body{
-		overflow: none;
-	}
-	.card{
-		display: flex;
-		margin-bottom: 100px;
-		flex-direction: column;
-		align-items: center;
-	}
-	.weatherCard{
-		display: flex;
-		width: 100%;
-		height: 350px;
-	}
-	.footer>div{
-		margin: 0px;
-	}
-
-
-}
-
-
-.weathers{
-	width:100%;
-	height: 100px;
-	background: rgb(255 255 255 / 30%);
-    border-radius: 8%;
-    margin-top: 10px;
-    padding-top: 10px;
-}
-.weathers p{
-	margin: 5px 0;
-	font-weight: 600;
-}
-
-.tempatures{
-    width: 100%;
-	display: flex;
-    justify-content: space-around;
-}
-.tempature{
-	margin:25px;
-	width: 90px;
-	height: 35px;
-	display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-.cities {
-margin: 20px;
-text-align: center;
-font-size: 32px;
-font-weight: bold;
-color: #333;
-padding: 8px 15px;
-border: 2px solid #ccc;
-border-radius: 5px;
-background-color: rgb(255 255 255 / 50%);
-appearance: none;
-cursor: pointer;
-transition: all 0.3s ease-in-out;
-overflow-y: hidden
-
-}
-
-.cities:focus {
-outline: none;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-border-color: #007bff;
-}
-
-.cities option {
-font-size: 32px;
-font-weight: bold;
-color: #e7e7e7;
-background-color: #6a6a6a;
-overflow-y: hidden
-}
-option:hover {
-background-color: #f50808;
-}
-
-.cities:hover{
-color: #000;
-background-color: rgb(255 255 255 / 80%);
-}
-
-
-
-
-.sunny{
-background:url("/public/assets/sunny.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.partly-cloudy{
-background:url("/public/assets/partly-cloudy.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.closed{
-background:url("/public/assets/closed.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.foggy{
-background:url("/public/assets/foggy.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.light-rain{
-background:url("/public/assets/light-rain.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.freezer-drizzle{
-background:url("/public/assets/freezer-drizzle.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.rainy{
-background:url("/public/assets/rainy.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.light-snow{
-background:url("/public/assets/light-snow.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.snowy{
-background:url("/public/assets/snowy.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.stormy{
-background:url("/public/assets/stormy.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-.storm-w-hail{
-background:url("/public/assets/storm-w-hail.png");
-background-size:     cover;                      
-background-repeat:   no-repeat;
-background-position: center center;
-width: 65%;
-height: 50%;
-}
-
 .footer {
 position: fixed;
 bottom: 0;
@@ -244,8 +28,208 @@ padding-right:20px ;
 color: #e7e7e7;
 padding-right: 5px;
 }
+
 .links{
 margin-left: 220px;
 }
 
+.card{
+width: 100%;
+display: flex;
+justify-content: center;
+}
 
+.weatherBar{
+display: flex;
+justify-content: center;
+padding: 0px;
+}
+
+.weatherCard{
+position: relative;
+font-family: 'Ubuntu', sans-serif;
+margin: 5px;
+width: calc(100%/8);
+height: 180%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid rgb(255 255 255 / 30%);
+border-radius: 16px;
+background-color: rgb(255 255 255 / 20%);
+box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+-webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+-webkit-mask-size: 800%;
+-webkit-mask-position: 0;
+z-index: -1;
+}
+
+.weatherCard:hover {
+transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+-webkit-mask-position: 120%;
+mask-position: 120%;
+opacity: 1;
+}
+
+@media only screen and (max-width: 600px){
+	.body{
+		overflow: none;
+	}
+	.card{
+		display: flex;
+		margin-bottom: 100px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.weatherCard{
+		display: flex;
+		width: 80%;
+		height: 22em;
+		margin: 10px;
+	}
+	.footer>div{
+		margin: 0px;
+	}
+
+
+}
+
+.weathers{
+width:100%;
+height: 100px;
+background: rgb(255 255 255 / 30%);
+border-radius: 8%;
+margin-top: 10px;
+padding-top: 10px;
+}
+
+.weathers p{
+margin: 5px 0;
+font-weight: 600;
+}
+
+.tempatures{
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+.tempature{
+margin:25px;
+width: 90px;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.options{
+display: flex;
+justify-content: center;
+}
+
+ul {
+list-style-type:none;
+margin:0;
+padding: 0;
+background-color:#dbdbdb;
+z-index:1000;
+}
+
+.radio-container {
+font-family: 'Ubuntu', sans-serif;
+font-weight: 500;
+font-size: 20px;
+position: relative;
+width: 13em;
+height: 4em;
+display: flex;
+justify-content: center;
+
+}
+
+.radio-options {
+position: absolute;
+max-height: 3em;
+width: 100%;
+overflow: hidden;
+transition: 0.7s;
+}
+
+.radio-options:hover {
+max-height: 300em; 
+background-color: rgb(255 255 255 / 50%);
+border-radius: 10px;
+}
+
+.radio-options .toggle {
+position: relative;
+cursor: pointer;
+padding: 0.75em;
+background: rgb(255 255 255 / 75%);
+border-radius: 10px;
+z-index: 1; }
+
+.radio-options li {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+}
+
+.radio-options label {
+display: block;
+opacity: 0;
+transition: 0s; 
+}
+
+.radio-options input {
+position: absolute;
+top: 0;
+left: 0;
+width: 300px;
+height: 9em;
+opacity: 0;
+z-index:1;
+cursor: pointer; 
+}
+
+.radio-options:hover li {
+position: relative; 
+}
+
+.radio-options:hover label {
+border: solid 1px rgba(0, 0, 0, 0.1);
+border-radius: 3px;
+padding: 3px;
+font-size: 20px;
+opacity: 1;
+transition: 0.5s; 
+}
+
+.radio-options:hover{
+background: none;
+}
+
+.radio-options:hover ul{
+margin-bottom: 100px;
+}
+
+.radio-options input:checked ~ label {
+font-weight: 600;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+opacity: 1;
+z-index: 2;
+padding: 0.75em;
+background-color:rgb(248, 248, 240);
+border-radius: 10px; 
+}
+
+.radio-options:hover input:checked ~ label {
+position: static;
+border-radius: 0; 
+}

@@ -87,7 +87,7 @@ function Container() {
     }
   },[most,city])
   
-  let bgstyle = `background:url(${imageURL})no-repeat center center fixed;background-size:cover;`
+  let bgstyle = `background:url(${imageURL})no-repeat center center fixed; background-size:cover;`
   const setStyle= ()=>{document.body.style.cssText+=bgstyle}
   setStyle()
   

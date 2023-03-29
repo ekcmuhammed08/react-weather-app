@@ -47,17 +47,8 @@ export const WeatherProvider = ({children})=>{
             }
         setMost(item)    
     }
-    function createIMG(v){
-        let x = document.createElement("IMG");
-        x.setAttribute("width", "200");
-        x.setAttribute("height", "100");
-        x.setAttribute("alt", "The Pulpit Rock");
-        x.setAttribute("src", `${v}.png`);
-        document.getElementById(`${v}`).appendChild(x);
-      } 
-  
     
-    const values= {createIMG, most,mostFreq,fetchWeather, weatherData, cityData, city, setCity}
+    const values= { most, mostFreq, fetchWeather, weatherData, cityData, city, setCity}
     return <WeatherContext.Provider value={values}>{children}</WeatherContext.Provider>
 } 
 
