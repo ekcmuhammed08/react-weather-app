@@ -7,7 +7,7 @@ function Options() {
     const handleSelect = ()=>{
         document.getElementsByName("city").forEach((e)=>{e.selected=false})
         document.getElementsByName("city").forEach((e)=>{e.checked&&setCity(e.value)})
-    }
+    }  
 
     const inputs = cityVals.map((val)=>
     <li >

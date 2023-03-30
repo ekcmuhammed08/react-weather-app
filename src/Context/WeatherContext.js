@@ -6,7 +6,7 @@ const WeatherContext = createContext();
 export const WeatherProvider = ({children})=>{
     const[weatherData,setWeatherData] = useState([{}]);
     const[cityData, setCityData] = useState([{}])
-    const[city,setCity] = useState("Adana")   
+    const[city,setCity] = useState(null)   
     const[most,setMost]=useState()
 
     const fetchGeo = async (city) =>{        
